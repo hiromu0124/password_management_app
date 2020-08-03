@@ -1,0 +1,15 @@
+current directory: /Users/katouhiromu/app/password_management_app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.7/ext/bootsnap
+/Users/katouhiromu/.rbenv/versions/2.5.1/bin/ruby -I /Users/katouhiromu/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200803-17688-mym0ri.rb extconf.rb
+creating Makefile
+
+current directory: /Users/katouhiromu/app/password_management_app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.7/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/katouhiromu/app/password_management_app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.7/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/katouhiromu/app/password_management_app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.7/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20200803-17688-16kyn29/bootsnap
