@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2020_08_03_105412) do
     t.string "terms2"
     t.string "terms3"
     t.string "terms4"
-    t.string "terms5"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -6,7 +6,7 @@
       パスワードの条件
     .password_form_terms
       大文字を含ませる
-      = f.check_box :terms1,value: "A"
+      = f.check_box :terms1
     .password_form_terms
       数字を含ませる
       = f.check_box :terms2 
@@ -15,9 +15,5 @@
       = f.check_box :terms3
     .password_form_terms
       何文字以上
-      = f.text_field :terms4
-    .password_form_terms
-      何文字以下
-      = f.text_field :terms5
+      = f.text_field :terms4, type: :number
       =f.submit
-      =@password
