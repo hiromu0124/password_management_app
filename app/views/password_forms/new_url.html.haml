@@ -1,0 +1,19 @@
+.header
+  パスワード生成
+.password_form
+  =form_with scope: :session, url: password_forms_path, model: @passwords, local: true, method: :create do |f|
+    .password_form_header
+      パスワードの条件
+    .password_form_terms
+      大文字を含ませる
+      = f.check_box :terms1
+    .password_form_terms
+      数字を含ませる
+      = f.check_box :terms2 
+      .password_form_terms
+      記号を含ませる
+      = f.check_box :terms3
+    .password_form_terms
+      何文字以上
+      = f.text_field :terms4, type: :number
+      =f.submit
