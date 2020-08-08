@@ -1,11 +1,13 @@
-
 .header
   パスワード生成
 =form_with scope: :session, url: app_url_path , model: @passwords, local: true, method: :get do |f|
   .password_app
-    登録するアプリ名
-    = f.text_field :app_name
+    .password_app_header
+      アプリ登録
+    .password_app_name
+      アプリ名
+      = f.text_field :app_name, class: "password_app_name_form"
     .password_app_url
       アプリのURL
-      = f.text_field :app_url
-      =f.submit
+      = f.text_field :app_url, class: "password_app_url_form"
+    =f.submit "つぎへ", class: "password_app_button"

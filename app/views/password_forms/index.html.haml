@@ -1,4 +1,12 @@
-.password
+.passwords_index
+  パスワード一覧
+%table.passwords_table
+  %tr
+    %th アプリ名
+    %th パスワード
   -@passwords.each do |password|
-    .password_a
-      =password.password
+    %tr.passwords_table_box
+      %td=link_to password.app_name,password.app_url, class: "app_link"
+      %td=password.password
+.app_create
+  =link_to "アプリ登録", root_path

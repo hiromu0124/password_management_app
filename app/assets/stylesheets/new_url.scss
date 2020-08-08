@@ -2,9 +2,32 @@
   background-color:#FFFFEE ;
   height: 100%;
   width: 500px;
-  text-align: center;
   margin: auto;
-  &_url{
+  padding: 20px;
+  &_header{
+    text-align: center;
+    margin: 20px;
+  }
+  &_name{
     
+    margin: 10px;
+    &_form{
+      text-align: center;
+      width: 200px;
+      height: 20px;
+      margin-left: 43px;
+    }
+  }
+  &_url{
+    margin: 10px;
+    &_form{
+      width: 200px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+  &_button{
+    float: right;
+    margin-right: 50px;
   }
 }
