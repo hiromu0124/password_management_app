@@ -10,7 +10,7 @@
   }
   &_name{
     
-    margin: 10px;
+    margin: 0 0 20px 15%;
     &_form{
       text-align: center;
       width: 200px;
@@ -19,7 +19,7 @@
     }
   }
   &_url{
-    margin: 10px;
+    margin: 0 0 10px 15%;
     &_form{
       width: 200px;
       height: 20px;
@@ -28,6 +28,6 @@
   }
   &_button{
     float: right;
-    margin-right: 50px;
+    margin-right: 40px;
   }
 }

@@ -26,23 +26,22 @@ class PasswordFormsController < ApplicationController
       else
         x='a'..'z'
       end
-      if session[:terms2]=="0"
+      if session[:terms2]=="1"
         y=0..9
       else
         y='a'..'z'
-        
-      end
-      if session[:terms3]=="1"
-        z='~','!','@','#','$','%','^','&','*','(',')','-','+'
-      else
-        z='a'..'z'
       end
       if session[:terms4]==""
         a=19
       else
         a=session[:terms4].to_i-1
       end
-      session[:password]=terms_params[:password]=[*x, *'a'..'z', *y,z].shuffle[0..a].join
+      if session[:terms3]=="1"
+        session[:password]=[*('a'..'z'),*(x),*(y),'~','!','@','#','$','%','^','&','*','(',')','-','+'].shuffle[0..a].join
+      else
+        session[:password]=[*('a'..'z'),*(x),*(y)].shuffle[0..a].join
+      end
+      
       
       @passwords=password_create
       redirect_to password_forms_path
