@@ -1,5 +1,55 @@
-.uuser{
-  width: 100px;
-  height: 100px;
-  background-image:url(../../images/key.jpg);
+body{
+  margin:0;
 }
+.userbackground{
+  position: fixed;
+  background: gray;
+  height: 100%;
+  width: 100%; 
+  overflow: scroll;
+}
+.user{
+  width: 500px;
+  height: 650px;
+  background:image-url("key2.jpeg")no-repeat;
+  background-size: 500px 650px;
+  margin: 100px auto 0;
+  &_header{
+    font-family: Arial;
+    display: flex;
+    color: white;
+    padding: 70px 70px;
+    font-size:25px;
+    &_signup{
+      margin-left: 60px;
+    }
+    &_sign_up{
+      margin-left: 60px;
+      border-bottom: 1px solid blue;
+    }
+      &_sign_in{
+        border-bottom: 1px solid blue; 
+      }
+    &_url{
+      color: white;
+      text-decoration: none;
+    }
+  
+  }
+  &_field{
+    width: 350px;
+    height: 300px;
+    margin:auto;
+  }
+}
+// .user{
+  
+//   width: 500px;
+//   height: 700px;
+//   background:image-url("key2.jpeg")no-repeat;
+//   &_field{
+//     width: 100px;
+//     height: 100px;
+//     margin:auto;
+//   }
+// }

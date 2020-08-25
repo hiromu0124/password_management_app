@@ -1,19 +1,30 @@
-.user ログイン
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .user_field
-    .field
-      = f.label :メールアドレス
-      %br/
-      = f.email_field :email, autofocus: true, autocomplete: "email"
-    .field
-      = f.label :パスワード
-      %br/
-      = f.password_field :password, autocomplete: "current-password"
-    - if devise_mapping.rememberable?
-      .field
-        = f.check_box :remember_me
-        = f.label :次回から自動でログインしますか, class: "user_checkbox_label"
-    .actions
-      = f.submit "ログイン"
-= render "devise/shared/links"
-.uuser
+-# .user
+-#   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+-#     .user_field
+-#       .field
+-#         = f.label :メールアドレス
+-#         %br/
+-#         = f.email_field :email, autofocus: true, autocomplete: "email"
+-#       .field
+-#         = f.label :パスワード
+-#         %br/
+-#         = f.password_field :password, autocomplete: "current-password"
+-#       - if devise_mapping.rememberable?
+-#         .field
+-#           = f.check_box :remember_me
+-#           = f.label :次回から自動でログインしますか, class: "user_checkbox_label"
+-#       .actions
+-#         = f.submit "ログイン"
+-#       = render "devise/shared/links"
+.userbackground
+  .user
+    .user_header 
+      .user_header_sign_in
+        SIGN IN
+      .user_header_signup
+        =link_to  "SIGN UP", new_user_registration_path, class:"user_header_url"
+    .user_field
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .user_field_email
+          = f.label :メールアドレス, class:"user_field_label"
+          %br= f.email_field :email, autofocus: true, autocomplete: "email"
