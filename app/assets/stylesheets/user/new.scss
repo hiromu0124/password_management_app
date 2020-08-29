@@ -3,12 +3,13 @@ body{
 }
 .userbackground{
   position: fixed;
-  background: gray;
+  background: rgb(209, 209, 209);
   height: 100%;
   width: 100%; 
   overflow: scroll;
 }
 .user{
+  box-shadow:0 0 15px ;
   width: 500px;
   height: 650px;
   background:image-url("key2.jpeg")no-repeat;
@@ -17,7 +18,7 @@ body{
   &_header{
     font-family: Arial;
     display: flex;
-    color: white;
+    color: rgb(200, 200, 200);
     padding: 70px 70px;
     font-size:25px;
     &_signup{
@@ -31,7 +32,7 @@ body{
         border-bottom: 1px solid blue; 
       }
     &_url{
-      color: white;
+      color: rgb(200, 200, 200);
       text-decoration: none;
     }
   
@@ -40,16 +41,31 @@ body{
     width: 350px;
     height: 300px;
     margin:auto;
+    &_label{
+      color: rgb(190, 190, 190);
+    }
+    &_form{
+      outline: 0;
+      background: rgb(190, 190, 190);
+      height: 27px;
+      width: 350px;
+      border-radius: 15px;
+      padding-left:10px;
+    }
+    &_password{
+      margin-top: 10px;
+    }
+    &_submit{
+      color: rgb(210, 210, 210);
+      outline: 0;
+      margin-top:30px;
+      height: 33px;
+      width: 370px;
+      border-radius: 15px;
+      background: rgb(0, 0, 0);
+    }
   }
 }
-// .user{
-  
-//   width: 500px;
-//   height: 700px;
-//   background:image-url("key2.jpeg")no-repeat;
-//   &_field{
-//     width: 100px;
-//     height: 100px;
-//     margin:auto;
-//   }
-// }
+.user_link{
+  color:rgb(210, 210, 210);
+}
