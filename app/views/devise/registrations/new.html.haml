@@ -5,6 +5,22 @@
         =link_to  "SIGN IN", new_user_session_path, class:"user_header_url"
       .user_header_sign_up
         SIGN UP
+    .user_field
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .user_field_email
+          = f.label :email, class:"user_field_label"
+          %br= f.email_field :email, autofocus: true, autocomplete: "email", autocomplete:"off", class:"user_field_form"
+        .user_field_password
+          = f.label :password, class:"user_field_label"
+          %br= f.password_field :password, autocomplete: "current-password", class:"user_field_form"
+        .user_field_confirmation
+          = f.label :password_confirmation
+          %br/
+          = f.password_field :password_confirmation, autocomplete: "new-password"
+          .actions
+        = f.submit "sign up", class:"user_field_submit"
+      = render "devise/shared/links"
+        
 -# = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
 -#   = render "devise/shared/error_messages", resource: resource
 -#   .field
